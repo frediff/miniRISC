@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+xst -intstyle ise -ifn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+xst -intstyle ise -ifn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+xst -intstyle ise -ifn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "D:/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim RISC_COMPUTER.ngc RISC_COMPUTER_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf 
+xst -intstyle ise -ifn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+xst -intstyle ise -ifn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf 
+netgen -intstyle ise -s 4  -pcf RISC_COMPUTER.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim RISC_COMPUTER.ncd RISC_COMPUTER_timesim.v 
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+xst -intstyle ise -ifn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+xst -intstyle ise -ifn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin_loc.ucf -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf -ucf pin_loc.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim RISC_COMPUTER.ngc RISC_COMPUTER_synthesis.v 
+bitgen -intstyle ise -f RISC_COMPUTER.ut RISC_COMPUTER.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim RISC_COMPUTER.ngc RISC_COMPUTER_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin_loc.ucf -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf -ucf pin_loc.ucf 
+bitgen -intstyle ise -f RISC_COMPUTER.ut RISC_COMPUTER.ncd 
+bitgen -intstyle ise -f RISC_COMPUTER.ut RISC_COMPUTER.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin_loc.ucf -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf -ucf pin_loc.ucf 
+bitgen -intstyle ise -f RISC_COMPUTER.ut RISC_COMPUTER.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin_loc.ucf -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf -ucf pin_loc.ucf 
+bitgen -intstyle ise -f RISC_COMPUTER.ut RISC_COMPUTER.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.xst" -ofn "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pin_loc.ucf -p xc3s400-pq208-4 RISC_COMPUTER.ngc RISC_COMPUTER.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o RISC_COMPUTER_map.ncd RISC_COMPUTER.ngd RISC_COMPUTER.pcf 
+par -w -intstyle ise -ol high -t 1 RISC_COMPUTER_map.ncd RISC_COMPUTER.ncd RISC_COMPUTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC_COMPUTER.twx RISC_COMPUTER.ncd -o RISC_COMPUTER.twr RISC_COMPUTER.pcf -ucf pin_loc.ucf 
+bitgen -intstyle ise -f RISC_COMPUTER.ut RISC_COMPUTER.ncd 

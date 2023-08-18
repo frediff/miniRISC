@@ -1,0 +1,10 @@
+Command line:
+   test_computer_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56895
+
+Tue Nov  8 13:53:25 2022
+
+
+ Elaboration Time: 2.38 sec

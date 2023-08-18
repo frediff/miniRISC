@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/test_computer_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_computer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/test_computer/DATA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_computer/DBG" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DBG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBG[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_computer/DBG_PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DBG_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBG_PC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_computer/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_computer/RST" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_computer/HLT" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">HLT</obj_property>
+      <obj_property name="ObjectShortName">HLT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_computer/DBG_ADDR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DBG_ADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">DBG_ADDR[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;26&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;20&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;27&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/A_MUX/OUT&lt;31&gt;1</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/ALU/Sh250_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;21&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;28&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;22&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;24&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RTR&lt;23&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;0&gt;21</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">GROUP_10_KGP_RISC/REG_FILE/RSR&lt;25&gt;114_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+</messages>
+

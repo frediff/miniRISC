@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj KGP_RISC_GR_10 -o /home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10/MUX232.tfi -lib work /home/anindya/Desktop/Anubhav_coa_lab/upsc/KGP_RISC_GR_10//THIRTY_TWO_BIT_TWO_TO_ONE_MUX.v -module MUX232 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

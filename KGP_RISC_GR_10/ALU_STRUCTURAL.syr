@@ -1,0 +1,588 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ALU_STRUCTURAL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU_STRUCTURAL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU_STRUCTURAL"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-pq208
+
+---- Source Options
+Top Module Name                    : ALU_STRUCTURAL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "LOOKAHEAD_CARRY_UNIT.v" in library work
+Compiling verilog file "AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER.v" in library work
+Module <LOOKAHEAD_CARRY_UNIT> compiled
+Compiling verilog file "SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER.v" in library work
+Module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> compiled
+Compiling verilog file "THIRTY_TWO_BIT_TWO_TO_ONE_MUX.v" in library work
+Module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> compiled
+Compiling verilog file "THIRTY_TWO_BIT_DECODER.v" in library work
+Module <MUX232> compiled
+Compiling verilog file "THIRTY_TWO_BIT_COMPLEMENT.v" in library work
+Module <THIRTY_TWO_BIT_DECODER> compiled
+Compiling verilog file "THIRTY_TWO_BIT_ADDER.v" in library work
+Module <THIRTY_TWO_BIT_COMPLEMENT> compiled
+Compiling verilog file "SHIFT_RIGHT_LOGICAL.v" in library work
+Module <THIRTY_TWO_BIT_ADDER> compiled
+Compiling verilog file "SHIFT_RIGHT_ARITHMETIC.v" in library work
+Module <SHIFT_RIGHT_LOGICAL> compiled
+Compiling verilog file "SHIFT_LEFT_LOGICAL.v" in library work
+Module <SHIFT_RIGHT_ARITHMETIC> compiled
+Compiling verilog file "MUX81.v" in library work
+Module <SHIFT_LEFT_LOGICAL> compiled
+Compiling verilog file "D_LATCH.v" in library work
+Module <MUX832> compiled
+Compiling verilog file "BITWISE_XOR.v" in library work
+Module <D_LATCH> compiled
+Compiling verilog file "BITWISE_AND.v" in library work
+Module <BITWISE_XOR> compiled
+Compiling verilog file "ALU_STRUCTURAL.v" in library work
+Module <BITWISE_AND> compiled
+Module <ALU_STRUCTURAL> compiled
+No errors in compilation
+Analysis of file <"ALU_STRUCTURAL.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ALU_STRUCTURAL> in library <work>.
+
+Analyzing hierarchy for module <MUX232> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_BIT_ADDER> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_BIT_COMPLEMENT> in library <work>.
+
+Analyzing hierarchy for module <BITWISE_AND> in library <work>.
+
+Analyzing hierarchy for module <BITWISE_XOR> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_BIT_DECODER> in library <work>.
+
+Analyzing hierarchy for module <SHIFT_LEFT_LOGICAL> in library <work>.
+
+Analyzing hierarchy for module <SHIFT_RIGHT_LOGICAL> in library <work>.
+
+Analyzing hierarchy for module <SHIFT_RIGHT_ARITHMETIC> in library <work>.
+
+Analyzing hierarchy for module <MUX832> in library <work>.
+
+Analyzing hierarchy for module <D_LATCH> in library <work>.
+
+Analyzing hierarchy for module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+
+Analyzing hierarchy for module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+
+Analyzing hierarchy for module <LOOKAHEAD_CARRY_UNIT> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ALU_STRUCTURAL>.
+Module <ALU_STRUCTURAL> is correct for synthesis.
+ 
+Analyzing module <MUX232> in library <work>.
+Module <MUX232> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_BIT_ADDER> in library <work>.
+Module <THIRTY_TWO_BIT_ADDER> is correct for synthesis.
+ 
+Analyzing module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+Module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> is correct for synthesis.
+ 
+Analyzing module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+Module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> is correct for synthesis.
+ 
+Analyzing module <LOOKAHEAD_CARRY_UNIT> in library <work>.
+Module <LOOKAHEAD_CARRY_UNIT> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_BIT_COMPLEMENT> in library <work>.
+Module <THIRTY_TWO_BIT_COMPLEMENT> is correct for synthesis.
+ 
+Analyzing module <BITWISE_AND> in library <work>.
+Module <BITWISE_AND> is correct for synthesis.
+ 
+Analyzing module <BITWISE_XOR> in library <work>.
+Module <BITWISE_XOR> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_BIT_DECODER> in library <work>.
+Module <THIRTY_TWO_BIT_DECODER> is correct for synthesis.
+ 
+Analyzing module <SHIFT_LEFT_LOGICAL> in library <work>.
+Module <SHIFT_LEFT_LOGICAL> is correct for synthesis.
+ 
+Analyzing module <SHIFT_RIGHT_LOGICAL> in library <work>.
+Module <SHIFT_RIGHT_LOGICAL> is correct for synthesis.
+ 
+Analyzing module <SHIFT_RIGHT_ARITHMETIC> in library <work>.
+Module <SHIFT_RIGHT_ARITHMETIC> is correct for synthesis.
+ 
+Analyzing module <MUX832> in library <work>.
+Module <MUX832> is correct for synthesis.
+ 
+Analyzing module <D_LATCH> in library <work>.
+Module <D_LATCH> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MUX232>.
+    Related source file is "THIRTY_TWO_BIT_TWO_TO_ONE_MUX.v".
+Unit <MUX232> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_BIT_COMPLEMENT>.
+    Related source file is "THIRTY_TWO_BIT_COMPLEMENT.v".
+    Found 32-bit adder for signal <OUT>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <THIRTY_TWO_BIT_COMPLEMENT> synthesized.
+
+
+Synthesizing Unit <BITWISE_AND>.
+    Related source file is "BITWISE_AND.v".
+Unit <BITWISE_AND> synthesized.
+
+
+Synthesizing Unit <BITWISE_XOR>.
+    Related source file is "BITWISE_XOR.v".
+    Found 32-bit xor2 for signal <C>.
+Unit <BITWISE_XOR> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_BIT_DECODER>.
+    Related source file is "THIRTY_TWO_BIT_DECODER.v".
+Unit <THIRTY_TWO_BIT_DECODER> synthesized.
+
+
+Synthesizing Unit <SHIFT_LEFT_LOGICAL>.
+    Related source file is "SHIFT_LEFT_LOGICAL.v".
+    Found 32-bit shifter logical left for signal <OUT>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <SHIFT_LEFT_LOGICAL> synthesized.
+
+
+Synthesizing Unit <SHIFT_RIGHT_LOGICAL>.
+    Related source file is "SHIFT_RIGHT_LOGICAL.v".
+    Found 32-bit shifter logical right for signal <OUT>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <SHIFT_RIGHT_LOGICAL> synthesized.
+
+
+Synthesizing Unit <SHIFT_RIGHT_ARITHMETIC>.
+    Related source file is "SHIFT_RIGHT_ARITHMETIC.v".
+    Found 32-bit shifter arithmetic right for signal <OUT>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <SHIFT_RIGHT_ARITHMETIC> synthesized.
+
+
+Synthesizing Unit <MUX832>.
+    Related source file is "MUX81.v".
+Unit <MUX832> synthesized.
+
+
+Synthesizing Unit <D_LATCH>.
+    Related source file is "D_LATCH.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <OUT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <D_LATCH> synthesized.
+
+
+Synthesizing Unit <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER>.
+    Related source file is "AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER.v".
+    Found 4-bit xor3 for signal <SUM>.
+    Summary:
+	inferred   4 Xor(s).
+Unit <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> synthesized.
+
+
+Synthesizing Unit <LOOKAHEAD_CARRY_UNIT>.
+    Related source file is "LOOKAHEAD_CARRY_UNIT.v".
+Unit <LOOKAHEAD_CARRY_UNIT> synthesized.
+
+
+Synthesizing Unit <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER>.
+    Related source file is "SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER.v".
+Unit <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_BIT_ADDER>.
+    Related source file is "THIRTY_TWO_BIT_ADDER.v".
+Unit <THIRTY_TWO_BIT_ADDER> synthesized.
+
+
+Synthesizing Unit <ALU_STRUCTURAL>.
+    Related source file is "ALU_STRUCTURAL.v".
+Unit <ALU_STRUCTURAL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU_STRUCTURAL> ...
+
+Optimizing unit <THIRTY_TWO_BIT_COMPLEMENT> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU_STRUCTURAL, actual ratio is 13.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU_STRUCTURAL.ngr
+Top Level Output File Name         : ALU_STRUCTURAL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 101
+
+Cell Usage :
+# BELS                             : 859
+#      GND                         : 1
+#      LUT2                        : 47
+#      LUT3                        : 253
+#      LUT4                        : 413
+#      MUXCY                       : 31
+#      MUXF5                       : 81
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 1
+#      LD                          : 1
+# IO Buffers                       : 101
+#      IBUF                        : 68
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-4 
+
+ Number of Slices:                      396  out of   3584    11%  
+ Number of 4 input LUTs:                713  out of   7168     9%  
+ Number of IOs:                         101
+ Number of bonded IOBs:                 101  out of    141    71%  
+    IOB Flip Flops:                       1
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ISADD(FINAL_MUX/OUT<31>11:O)       | NONE(*)(CARRY_FLAG/OUT)| 1     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 28.196ns
+   Maximum output required time after clock: 7.078ns
+   Maximum combinational path delay: 37.650ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ISADD'
+  Total number of paths / destination ports: 110 / 1
+-------------------------------------------------------------------------
+Offset:              28.196ns (Levels of Logic = 18)
+  Source:            B<0> (PAD)
+  Destination:       CARRY_FLAG/OUT (LATCH)
+  Destination Clock: ISADD falling
+
+  Data Path: B<0> to CARRY_FLAG/OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            89   0.821   2.375  B_0_IBUF (B_0_IBUF)
+     LUT2:I1->O            2   0.551   1.216  ADDER_ALU/A1/ACLA0/G01 (ADDER_ALU/A1/ACLA0/C1)
+     LUT4:I0->O            2   0.551   0.903  ADDER_ALU/A1/ACLA0/G28 (ADDER_ALU/A1/ACLA0/G28)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A1/ACLA1/C2_SW2 (ADDER_ALU/A1/ACLA1/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A1/LCU0/C252 (ADDER_ALU/A1/LCU0/C252)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A1/ACLA2/C2_SW2 (ADDER_ALU/A1/ACLA2/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A1/LCU0/C352 (ADDER_ALU/A1/LCU0/C352)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A1/ACLA3/C2_SW2 (ADDER_ALU/A1/ACLA3/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A1/LCU0/C452 (ADDER_ALU/A1/LCU0/C452)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A2/ACLA0/C2_SW2 (ADDER_ALU/A2/ACLA0/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A2/LCU0/C152 (ADDER_ALU/A2/LCU0/C152)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A2/ACLA1/C2_SW2 (ADDER_ALU/A2/ACLA1/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A2/LCU0/C252 (ADDER_ALU/A2/LCU0/C252)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A2/ACLA2/C2_SW2 (ADDER_ALU/A2/ACLA2/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A2/LCU0/C352 (ADDER_ALU/A2/LCU0/C352)
+     LUT4:I3->O            2   0.551   1.216  ADDER_ALU/A2/LCU0/C358 (ADDER_ALU/A2/C3)
+     LUT4:I0->O            1   0.551   0.827  ADDER_ALU/A2/LCU0/C458_SW0 (N530)
+     LUT4:I3->O            1   0.551   0.000  ADDER_ALU/A2/LCU0/C458 (CYIN)
+     LD:D                      0.203          CARRY_FLAG/OUT
+    ----------------------------------------
+    Total                     28.196ns (10.391ns logic, 17.805ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ISADD'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            CARRY_FLAG/OUT (LATCH)
+  Destination:       CY (PAD)
+  Source Clock:      ISADD falling
+
+  Data Path: CARRY_FLAG/OUT to CY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   0.801  CARRY_FLAG/OUT (CARRY_FLAG/OUT)
+     OBUF:I->O                 5.644          CY_OBUF (CY)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 19128 / 32
+-------------------------------------------------------------------------
+Delay:               37.650ns (Levels of Logic = 21)
+  Source:            B<0> (PAD)
+  Destination:       RES<31> (PAD)
+
+  Data Path: B<0> to RES<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            89   0.821   2.375  B_0_IBUF (B_0_IBUF)
+     LUT2:I1->O            2   0.551   1.216  ADDER_ALU/A1/ACLA0/G01 (ADDER_ALU/A1/ACLA0/C1)
+     LUT4:I0->O            2   0.551   0.903  ADDER_ALU/A1/ACLA0/G28 (ADDER_ALU/A1/ACLA0/G28)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A1/ACLA1/C2_SW2 (ADDER_ALU/A1/ACLA1/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A1/LCU0/C252 (ADDER_ALU/A1/LCU0/C252)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A1/ACLA2/C2_SW2 (ADDER_ALU/A1/ACLA2/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A1/LCU0/C352 (ADDER_ALU/A1/LCU0/C352)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A1/ACLA3/C2_SW2 (ADDER_ALU/A1/ACLA3/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A1/LCU0/C452 (ADDER_ALU/A1/LCU0/C452)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A2/ACLA0/C2_SW2 (ADDER_ALU/A2/ACLA0/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A2/LCU0/C152 (ADDER_ALU/A2/LCU0/C152)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A2/ACLA1/C2_SW2 (ADDER_ALU/A2/ACLA1/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A2/LCU0/C252 (ADDER_ALU/A2/LCU0/C252)
+     LUT4:I3->O            3   0.551   0.975  ADDER_ALU/A2/ACLA2/C2_SW2 (ADDER_ALU/A2/ACLA2/C1)
+     LUT4:I2->O            2   0.551   0.903  ADDER_ALU/A2/LCU0/C352 (ADDER_ALU/A2/LCU0/C352)
+     LUT4:I3->O            2   0.551   0.945  ADDER_ALU/A2/ACLA3/C2_SW2 (ADDER_ALU/A2/ACLA3/C1)
+     LUT3:I2->O            2   0.551   1.072  ADDER_ALU/A2/ACLA3/C2 (ADDER_ALU/A2/ACLA3/C2)
+     LUT4:I1->O            1   0.551   0.996  FINAL_MUX/OUT<31>223 (FINAL_MUX/OUT<31>223)
+     LUT4:I1->O            1   0.551   1.140  FINAL_MUX/OUT<31>240_SW0 (N596)
+     LUT3:I0->O            1   0.551   0.801  FINAL_MUX/OUT<31>240 (RES_31_OBUF)
+     OBUF:I->O                 5.644          RES_31_OBUF (RES<31>)
+    ----------------------------------------
+    Total                     37.650ns (16.934ns logic, 20.716ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.56 secs
+ 
+--> 
+
+Total memory usage is 4531404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

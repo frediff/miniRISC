@@ -1,0 +1,4 @@
+verilog isim_temp "ipcore_dir/MEMORY.v"
+verilog isim_temp "RAM.v"
+verilog isim_temp "MEMORY_TEST.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

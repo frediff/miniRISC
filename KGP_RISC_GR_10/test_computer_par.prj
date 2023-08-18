@@ -1,0 +1,2 @@
+verilog work "netgen/par/RISC_COMPUTER_timesim.v"
+verilog work "test_computer.v"

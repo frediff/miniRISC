@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MUX232 instance_name (
+    .SEL(SEL), 
+    .ZERO(ZERO), 
+    .ONE(ONE), 
+    .OUT(OUT)
+    );
+
+

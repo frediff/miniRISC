@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/test_computer_isim_beh.exe" -prj "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/test_computer_beh.prj" "work.test_computer" "work.glbl" 

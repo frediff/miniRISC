@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+MEM instance_name (
+    .clk(clk), 
+    .wea(wea), 
+    .dina(dina), 
+    .addra(addra), 
+    .douta(douta), 
+    .web(web), 
+    .dinb(dinb), 
+    .addrb(addrb), 
+    .doutb(doutb)
+    );
+
+

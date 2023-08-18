@@ -1,0 +1,830 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: RISC_COMPUTER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RISC_COMPUTER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RISC_COMPUTER"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-pq208
+
+---- Source Options
+Top Module Name                    : RISC_COMPUTER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "LOOKAHEAD_CARRY_UNIT.v" in library work
+Compiling verilog file "AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER.v" in library work
+Module <LOOKAHEAD_CARRY_UNIT> compiled
+Compiling verilog file "SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER.v" in library work
+Module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> compiled
+Compiling verilog file "THIRTY_TWO_BIT_TWO_TO_ONE_MUX.v" in library work
+Module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> compiled
+Compiling verilog file "THIRTY_TWO_BIT_DECODER.v" in library work
+Module <MUX232> compiled
+Compiling verilog file "THIRTY_TWO_BIT_COMPLEMENT.v" in library work
+Module <THIRTY_TWO_BIT_DECODER> compiled
+Compiling verilog file "THIRTY_TWO_BIT_ADDER.v" in library work
+Module <THIRTY_TWO_BIT_COMPLEMENT> compiled
+Compiling verilog file "SHIFT_RIGHT_LOGICAL.v" in library work
+Module <THIRTY_TWO_BIT_ADDER> compiled
+Compiling verilog file "SHIFT_RIGHT_ARITHMETIC.v" in library work
+Module <SHIFT_RIGHT_LOGICAL> compiled
+Compiling verilog file "SHIFT_LEFT_LOGICAL.v" in library work
+Module <SHIFT_RIGHT_ARITHMETIC> compiled
+Compiling verilog file "MUX81.v" in library work
+Module <SHIFT_LEFT_LOGICAL> compiled
+Compiling verilog file "D_LATCH.v" in library work
+Module <MUX832> compiled
+Compiling verilog file "BITWISE_XOR.v" in library work
+Module <D_LATCH> compiled
+Compiling verilog file "BITWISE_AND.v" in library work
+Module <BITWISE_XOR> compiled
+Compiling verilog file "THIRTY_TWO_BIT_OR.v" in library work
+Module <BITWISE_AND> compiled
+Compiling verilog file "THIRTY_TWO_BIT_FOUR_TO_ONE_MUX.v" in library work
+Module <THIRTY_TWO_FAN_IN_OR> compiled
+Compiling verilog file "REGISTER_FILE.v" in library work
+Module <MUX432> compiled
+Compiling verilog file "PROGRAM_COUNTER.v" in library work
+Module <REGISTER_FILE> compiled
+Compiling verilog file "ONE_BIT_EIGHT_TO_ONE_MUX.v" in library work
+Module <PROGRAM_COUNTER> compiled
+Compiling verilog file "ipcore_dir/MEMORY.v" in library work
+Module <MUX81> compiled
+Compiling verilog file "CONTROLLER.v" in library work
+Module <MEMORY> compiled
+Compiling verilog file "ALU_STRUCTURAL.v" in library work
+Module <CONTROLLER> compiled
+Compiling verilog file "ADDER_L.v" in library work
+Module <ALU_STRUCTURAL> compiled
+Compiling verilog file "ADDER_1.v" in library work
+Module <ADDER_L> compiled
+Compiling verilog file "RAM.v" in library work
+Module <ADDER_1> compiled
+Compiling verilog file "PROCESSOR.v" in library work
+Module <MEM> compiled
+Compiling verilog file "MUX211.v" in library work
+Module <PROCESSOR> compiled
+Compiling verilog file "RISC_COMPUTER.v" in library work
+Module <MUX212> compiled
+Module <RISC_COMPUTER> compiled
+No errors in compilation
+Analysis of file <"RISC_COMPUTER.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <RISC_COMPUTER> in library <work>.
+
+Analyzing hierarchy for module <MUX232> in library <work>.
+
+Analyzing hierarchy for module <MUX212> in library <work>.
+
+Analyzing hierarchy for module <MEM> in library <work>.
+
+Analyzing hierarchy for module <PROCESSOR> in library <work>.
+
+Analyzing hierarchy for module <CONTROLLER> in library <work>.
+
+Analyzing hierarchy for module <REGISTER_FILE> in library <work>.
+
+Analyzing hierarchy for module <MUX232> in library <work>.
+
+Analyzing hierarchy for module <MUX432> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_FAN_IN_OR> in library <work>.
+
+Analyzing hierarchy for module <MUX81> in library <work>.
+
+Analyzing hierarchy for module <ALU_STRUCTURAL> in library <work>.
+
+Analyzing hierarchy for module <PROGRAM_COUNTER> in library <work>.
+
+Analyzing hierarchy for module <ADDER_1> in library <work>.
+
+Analyzing hierarchy for module <ADDER_L> in library <work>.
+
+Analyzing hierarchy for module <MUX832> in library <work>.
+
+Analyzing hierarchy for module <MUX232> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_BIT_ADDER> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_BIT_COMPLEMENT> in library <work>.
+
+Analyzing hierarchy for module <BITWISE_AND> in library <work>.
+
+Analyzing hierarchy for module <BITWISE_XOR> in library <work>.
+
+Analyzing hierarchy for module <THIRTY_TWO_BIT_DECODER> in library <work>.
+
+Analyzing hierarchy for module <SHIFT_LEFT_LOGICAL> in library <work>.
+
+Analyzing hierarchy for module <SHIFT_RIGHT_LOGICAL> in library <work>.
+
+Analyzing hierarchy for module <SHIFT_RIGHT_ARITHMETIC> in library <work>.
+
+Analyzing hierarchy for module <D_LATCH> in library <work>.
+
+Analyzing hierarchy for module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+
+Analyzing hierarchy for module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+
+Analyzing hierarchy for module <LOOKAHEAD_CARRY_UNIT> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <RISC_COMPUTER>.
+Module <RISC_COMPUTER> is correct for synthesis.
+ 
+Analyzing module <MUX232> in library <work>.
+Module <MUX232> is correct for synthesis.
+ 
+Analyzing module <MUX212> in library <work>.
+Module <MUX212> is correct for synthesis.
+ 
+Analyzing module <MEM> in library <work>.
+WARNING:Xst:2211 - "ipcore_dir/MEMORY.v" line 35: Instantiating black box module <MEMORY>.
+Module <MEM> is correct for synthesis.
+ 
+Analyzing module <PROCESSOR> in library <work>.
+Module <PROCESSOR> is correct for synthesis.
+ 
+Analyzing module <CONTROLLER> in library <work>.
+Module <CONTROLLER> is correct for synthesis.
+ 
+Analyzing module <REGISTER_FILE> in library <work>.
+Module <REGISTER_FILE> is correct for synthesis.
+ 
+Analyzing module <MUX832> in library <work>.
+Module <MUX832> is correct for synthesis.
+ 
+Analyzing module <MUX432> in library <work>.
+Module <MUX432> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_FAN_IN_OR> in library <work>.
+Module <THIRTY_TWO_FAN_IN_OR> is correct for synthesis.
+ 
+Analyzing module <MUX81> in library <work>.
+Module <MUX81> is correct for synthesis.
+ 
+Analyzing module <ALU_STRUCTURAL> in library <work>.
+Module <ALU_STRUCTURAL> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_BIT_ADDER> in library <work>.
+Module <THIRTY_TWO_BIT_ADDER> is correct for synthesis.
+ 
+Analyzing module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+Module <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> is correct for synthesis.
+ 
+Analyzing module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> in library <work>.
+Module <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> is correct for synthesis.
+ 
+Analyzing module <LOOKAHEAD_CARRY_UNIT> in library <work>.
+Module <LOOKAHEAD_CARRY_UNIT> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_BIT_COMPLEMENT> in library <work>.
+Module <THIRTY_TWO_BIT_COMPLEMENT> is correct for synthesis.
+ 
+Analyzing module <BITWISE_AND> in library <work>.
+Module <BITWISE_AND> is correct for synthesis.
+ 
+Analyzing module <BITWISE_XOR> in library <work>.
+Module <BITWISE_XOR> is correct for synthesis.
+ 
+Analyzing module <THIRTY_TWO_BIT_DECODER> in library <work>.
+Module <THIRTY_TWO_BIT_DECODER> is correct for synthesis.
+ 
+Analyzing module <SHIFT_LEFT_LOGICAL> in library <work>.
+Module <SHIFT_LEFT_LOGICAL> is correct for synthesis.
+ 
+Analyzing module <SHIFT_RIGHT_LOGICAL> in library <work>.
+Module <SHIFT_RIGHT_LOGICAL> is correct for synthesis.
+ 
+Analyzing module <SHIFT_RIGHT_ARITHMETIC> in library <work>.
+Module <SHIFT_RIGHT_ARITHMETIC> is correct for synthesis.
+ 
+Analyzing module <D_LATCH> in library <work>.
+Module <D_LATCH> is correct for synthesis.
+ 
+Analyzing module <PROGRAM_COUNTER> in library <work>.
+Module <PROGRAM_COUNTER> is correct for synthesis.
+ 
+Analyzing module <ADDER_1> in library <work>.
+Module <ADDER_1> is correct for synthesis.
+ 
+Analyzing module <ADDER_L> in library <work>.
+Module <ADDER_L> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MUX232>.
+    Related source file is "THIRTY_TWO_BIT_TWO_TO_ONE_MUX.v".
+Unit <MUX232> synthesized.
+
+
+Synthesizing Unit <MUX212>.
+    Related source file is "MUX211.v".
+Unit <MUX212> synthesized.
+
+
+Synthesizing Unit <CONTROLLER>.
+    Related source file is "CONTROLLER.v".
+Unit <CONTROLLER> synthesized.
+
+
+Synthesizing Unit <MUX432>.
+    Related source file is "THIRTY_TWO_BIT_FOUR_TO_ONE_MUX.v".
+Unit <MUX432> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_FAN_IN_OR>.
+    Related source file is "THIRTY_TWO_BIT_OR.v".
+Unit <THIRTY_TWO_FAN_IN_OR> synthesized.
+
+
+Synthesizing Unit <MUX81>.
+    Related source file is "ONE_BIT_EIGHT_TO_ONE_MUX.v".
+Unit <MUX81> synthesized.
+
+
+Synthesizing Unit <PROGRAM_COUNTER>.
+    Related source file is "PROGRAM_COUNTER.v".
+    Found 32-bit register for signal <PC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PROGRAM_COUNTER> synthesized.
+
+
+Synthesizing Unit <ADDER_1>.
+    Related source file is "ADDER_1.v".
+    Found 32-bit adder for signal <PC_1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADDER_1> synthesized.
+
+
+Synthesizing Unit <ADDER_L>.
+    Related source file is "ADDER_L.v".
+    Found 32-bit adder for signal <PC_L>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADDER_L> synthesized.
+
+
+Synthesizing Unit <MUX832>.
+    Related source file is "MUX81.v".
+Unit <MUX832> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_BIT_COMPLEMENT>.
+    Related source file is "THIRTY_TWO_BIT_COMPLEMENT.v".
+    Found 32-bit adder for signal <OUT>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <THIRTY_TWO_BIT_COMPLEMENT> synthesized.
+
+
+Synthesizing Unit <BITWISE_AND>.
+    Related source file is "BITWISE_AND.v".
+Unit <BITWISE_AND> synthesized.
+
+
+Synthesizing Unit <BITWISE_XOR>.
+    Related source file is "BITWISE_XOR.v".
+    Found 32-bit xor2 for signal <C>.
+Unit <BITWISE_XOR> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_BIT_DECODER>.
+    Related source file is "THIRTY_TWO_BIT_DECODER.v".
+Unit <THIRTY_TWO_BIT_DECODER> synthesized.
+
+
+Synthesizing Unit <SHIFT_LEFT_LOGICAL>.
+    Related source file is "SHIFT_LEFT_LOGICAL.v".
+    Found 32-bit shifter logical left for signal <OUT>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <SHIFT_LEFT_LOGICAL> synthesized.
+
+
+Synthesizing Unit <SHIFT_RIGHT_LOGICAL>.
+    Related source file is "SHIFT_RIGHT_LOGICAL.v".
+    Found 32-bit shifter logical right for signal <OUT>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <SHIFT_RIGHT_LOGICAL> synthesized.
+
+
+Synthesizing Unit <SHIFT_RIGHT_ARITHMETIC>.
+    Related source file is "SHIFT_RIGHT_ARITHMETIC.v".
+    Found 32-bit shifter arithmetic right for signal <OUT>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <SHIFT_RIGHT_ARITHMETIC> synthesized.
+
+
+Synthesizing Unit <D_LATCH>.
+    Related source file is "D_LATCH.v".
+Unit <D_LATCH> synthesized.
+
+
+Synthesizing Unit <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER>.
+    Related source file is "AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER.v".
+    Found 4-bit xor3 for signal <SUM>.
+    Summary:
+	inferred   4 Xor(s).
+Unit <AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER> synthesized.
+
+
+Synthesizing Unit <LOOKAHEAD_CARRY_UNIT>.
+    Related source file is "LOOKAHEAD_CARRY_UNIT.v".
+Unit <LOOKAHEAD_CARRY_UNIT> synthesized.
+
+
+Synthesizing Unit <MEM>.
+    Related source file is "RAM.v".
+Unit <MEM> synthesized.
+
+
+Synthesizing Unit <REGISTER_FILE>.
+    Related source file is "REGISTER_FILE.v".
+    Found 1024-bit register for signal <R>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <R>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+Unit <REGISTER_FILE> synthesized.
+
+
+Synthesizing Unit <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER>.
+    Related source file is "SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER.v".
+Unit <SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER> synthesized.
+
+
+Synthesizing Unit <THIRTY_TWO_BIT_ADDER>.
+    Related source file is "THIRTY_TWO_BIT_ADDER.v".
+Unit <THIRTY_TWO_BIT_ADDER> synthesized.
+
+
+Synthesizing Unit <ALU_STRUCTURAL>.
+    Related source file is "ALU_STRUCTURAL.v".
+Unit <ALU_STRUCTURAL> synthesized.
+
+
+Synthesizing Unit <PROCESSOR>.
+    Related source file is "PROCESSOR.v".
+Unit <PROCESSOR> synthesized.
+
+
+Synthesizing Unit <RISC_COMPUTER>.
+    Related source file is "RISC_COMPUTER.v".
+Unit <RISC_COMPUTER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 33
+ 32-bit register                                       : 33
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/MEMORY.ngc>.
+Loading core <MEMORY> for timing and area information for instance <BRAM_INSTANCE>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+WARNING:Xst:2170 - Unit ALU_STRUCTURAL : the following signal(s) form a combinatorial loop: CARRY_FLAG/OUT_BAR_and0000.
+
+Optimizing unit <RISC_COMPUTER> ...
+
+Optimizing unit <PROGRAM_COUNTER> ...
+
+Optimizing unit <THIRTY_TWO_BIT_COMPLEMENT> ...
+
+Optimizing unit <REGISTER_FILE> ...
+
+Optimizing unit <ALU_STRUCTURAL> ...
+
+Optimizing unit <PROCESSOR> ...
+
+Mapping all equations...
+WARNING:Xst:2170 - Unit RISC_COMPUTER : the following signal(s) form a combinatorial loop: GROUP_10_KGP_RISC/CY.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RISC_COMPUTER, actual ratio is 41.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RISC_COMPUTER.ngr
+Top Level Output File Name         : RISC_COMPUTER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 111
+
+Cell Usage :
+# BELS                             : 2959
+#      GND                         : 10
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 111
+#      LUT3                        : 396
+#      LUT3_D                      : 40
+#      LUT3_L                      : 9
+#      LUT4                        : 1595
+#      LUT4_D                      : 96
+#      LUT4_L                      : 301
+#      MUXCY                       : 101
+#      MUXF5                       : 169
+#      VCC                         : 2
+#      XORCY                       : 96
+# FlipFlops/Latches                : 1056
+#      FDE_1                       : 1024
+#      FDRE_1                      : 32
+# RAMS                             : 8
+#      RAMB16                      : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 110
+#      IBUF                        : 14
+#      OBUF                        : 96
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-4 
+
+ Number of Slices:                     1377  out of   3584    38%  
+ Number of Slice Flip Flops:           1056  out of   7168    14%  
+ Number of 4 input LUTs:               2581  out of   7168    36%  
+ Number of IOs:                         111
+ Number of bonded IOBs:                 111  out of    141    78%  
+ Number of BRAMs:                         8  out of     16    50%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 1064  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 46.413ns (Maximum Frequency: 21.546MHz)
+   Minimum input arrival time before clock: 37.363ns
+   Maximum output required time after clock: 15.727ns
+   Maximum combinational path delay: 14.159ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 46.413ns (frequency: 21.546MHz)
+  Total number of paths / destination ports: 30667504 / 1280
+-------------------------------------------------------------------------
+Delay:               23.206ns (Levels of Logic = 27)
+  Source:            GROUP_10_KGP_RISC/REG_FILE/R_17_3 (FF)
+  Destination:       MEMORY_PC/BRAM_INSTANCE/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram (RAM)
+  Source Clock:      CLK falling
+  Destination Clock: CLK rising
+
+  Data Path: GROUP_10_KGP_RISC/REG_FILE/R_17_3 to MEMORY_PC/BRAM_INSTANCE/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.720   0.945  GROUP_10_KGP_RISC/REG_FILE/R_17_3 (GROUP_10_KGP_RISC/REG_FILE/R_17_3)
+     LUT4:I2->O            1   0.551   0.996  GROUP_10_KGP_RISC/REG_FILE/RSR<3>188 (GROUP_10_KGP_RISC/REG_FILE/RSR<3>188)
+     LUT4:I1->O            1   0.551   0.869  GROUP_10_KGP_RISC/REG_FILE/RSR<3>215 (GROUP_10_KGP_RISC/REG_FILE/RSR<3>215)
+     LUT4:I2->O            2   0.551   0.945  GROUP_10_KGP_RISC/REG_FILE/RSR<3>237 (GROUP_10_KGP_RISC/REG_FILE/RSR<3>237)
+     LUT3:I2->O            4   0.551   0.943  GROUP_10_KGP_RISC/REG_FILE/RSR<3>247 (DINB<3>)
+     LUT4:I3->O            1   0.551   0.000  GROUP_10_KGP_RISC/B_MUX/OUT<3>32_F (N678)
+     MUXF5:I0->O         138   0.360   2.528  GROUP_10_KGP_RISC/B_MUX/OUT<3>32 (GROUP_10_KGP_RISC/B<3>)
+     LUT3:I2->O            1   0.551   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_not0000<3>1 (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_not0000<3>)
+     MUXCY:S->O            1   0.500   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<3> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<4> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<5> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<6> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<7> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<8> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<9> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<10> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<11> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<12> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<13> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<14> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<15> (GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_cy<15>)
+     XORCY:CI->O           2   0.904   0.903  GROUP_10_KGP_RISC/ALU/COMP_ALU/Madd_OUT_xor<16> (GROUP_10_KGP_RISC/ALU/COMPOUT<16>)
+     LUT4:I3->O            2   0.551   1.216  GROUP_10_KGP_RISC/ALU/AND_ALU/C_16_and00001 (GROUP_10_KGP_RISC/ALU/ANDOUT<16>)
+     LUT4:I0->O            2   0.551   0.903  GROUP_10_KGP_RISC/ALU/DEC_ALU/T221_SW0 (N372)
+     LUT4:I3->O            1   0.551   0.996  GROUP_10_KGP_RISC/ALU/DEC_ALU/OUT_4_or0000_SW0 (N357)
+     LUT4:I1->O            2   0.551   1.216  GROUP_10_KGP_RISC/ALU/FINAL_MUX/OUT<5>244 (GROUP_10_KGP_RISC/ALU/FINAL_MUX/OUT<5>244)
+     LUT4:I0->O            8   0.551   1.083  PERIPHERAL_OUTPUT_ADDRESS/OUT<5>1 (ADDRB_M<5>)
+     begin scope: 'MEMORY_PC/BRAM_INSTANCE'
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram'
+     RAMB16:ADDRB7             0.350          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp4x4.ram
+    ----------------------------------------
+    Total                     23.206ns (9.663ns logic, 13.543ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1639916 / 2240
+-------------------------------------------------------------------------
+Offset:              37.363ns (Levels of Logic = 28)
+  Source:            HLT (PAD)
+  Destination:       GROUP_10_KGP_RISC/PC/PC_0 (FF)
+  Destination Clock: CLK falling
+
+  Data Path: HLT to GROUP_10_KGP_RISC/PC/PC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   0.821   2.174  HLT_IBUF (HLT_IBUF)
+     LUT4:I1->O           87   0.551   2.194  GROUP_10_KGP_RISC/CLU/SSWREG2 (GROUP_10_KGP_RISC/SA)
+     LUT4:I3->O           36   0.551   2.071  GROUP_10_KGP_RISC/CLU/SBREG_1_mux0000 (GROUP_10_KGP_RISC/SB<1>)
+     LUT2:I1->O            1   0.551   0.996  GROUP_10_KGP_RISC/B_MUX/OUT<0>0 (GROUP_10_KGP_RISC/B_MUX/OUT<0>0)
+     LUT4:I1->O            1   0.551   0.000  GROUP_10_KGP_RISC/B_MUX/OUT<0>32_F (N672)
+     MUXF5:I0->O          98   0.360   2.257  GROUP_10_KGP_RISC/B_MUX/OUT<0>32 (GROUP_10_KGP_RISC/B<0>)
+     LUT4:I3->O            3   0.551   0.907  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/ACLA0/C21 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/ACLA0/C2)
+     MUXF5:S->O            4   0.621   0.943  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/ACLA0/G33 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/C1)
+     LUT4_L:I3->LO         1   0.551   0.126  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C252 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C252)
+     LUT4:I3->O            4   0.551   0.943  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C258 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/C2)
+     LUT4:I3->O            1   0.551   0.827  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C352 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C352)
+     LUT4_D:I3->LO         1   0.551   0.126  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C358 (N1614)
+     LUT4:I3->O            1   0.551   0.827  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C452 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C452)
+     LUT4_D:I3->LO         1   0.551   0.126  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A1/LCU0/C458 (N1615)
+     LUT4:I3->O            1   0.551   0.827  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C152 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C152)
+     LUT4_D:I3->LO         1   0.551   0.126  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C158 (N1616)
+     LUT4:I3->O            1   0.551   0.827  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C252 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C252)
+     LUT4_D:I3->LO         1   0.551   0.126  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C258 (N1617)
+     LUT4:I3->O            1   0.551   0.827  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C352 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C352)
+     LUT4_D:I3->LO         1   0.551   0.126  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C358 (N1618)
+     LUT4:I3->O            1   0.551   0.827  GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C452 (GROUP_10_KGP_RISC/ALU/ADDER_ALU/A2/LCU0/C452)
+     LUT4:I3->O            1   0.551   0.000  GROUP_10_KGP_RISC/ALU/CY11 (GROUP_10_KGP_RISC/ALU/CY1)
+     MUXF5:I1->O           3   0.360   0.933  GROUP_10_KGP_RISC/ALU/CY1_f5 (GROUP_10_KGP_RISC/CY)
+     LUT4:I3->O            1   0.551   0.000  GROUP_10_KGP_RISC/SPC_MUX/OUT84_SW01 (GROUP_10_KGP_RISC/SPC_MUX/OUT84_SW0)
+     MUXF5:I1->O           1   0.360   0.827  GROUP_10_KGP_RISC/SPC_MUX/OUT84_SW0_f5 (N880)
+     LUT4:I3->O           32   0.551   2.192  GROUP_10_KGP_RISC/SPC_MUX/OUT84 (GROUP_10_KGP_RISC/SAD)
+     LUT3:I0->O            1   0.551   0.000  GROUP_10_KGP_RISC/PC_MUX/OUT<31>_F (N1400)
+     MUXF5:I0->O           1   0.360   0.000  GROUP_10_KGP_RISC/PC_MUX/OUT<31> (GROUP_10_KGP_RISC/PC_IN<31>)
+     FDRE_1:D                  0.203          GROUP_10_KGP_RISC/PC/PC_31
+    ----------------------------------------
+    Total                     37.363ns (15.207ns logic, 22.156ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2080 / 64
+-------------------------------------------------------------------------
+Offset:              15.727ns (Levels of Logic = 6)
+  Source:            GROUP_10_KGP_RISC/REG_FILE/R_17_31 (FF)
+  Destination:       DBG<31> (PAD)
+  Source Clock:      CLK falling
+
+  Data Path: GROUP_10_KGP_RISC/REG_FILE/R_17_31 to DBG<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.720   0.945  GROUP_10_KGP_RISC/REG_FILE/R_17_31 (GROUP_10_KGP_RISC/REG_FILE/R_17_31)
+     LUT4:I2->O            1   0.551   0.996  GROUP_10_KGP_RISC/REG_FILE/RSR<31>188 (GROUP_10_KGP_RISC/REG_FILE/RSR<31>188)
+     LUT4:I1->O            1   0.551   0.869  GROUP_10_KGP_RISC/REG_FILE/RSR<31>215 (GROUP_10_KGP_RISC/REG_FILE/RSR<31>215)
+     LUT4:I2->O            2   0.551   0.945  GROUP_10_KGP_RISC/REG_FILE/RSR<31>237 (GROUP_10_KGP_RISC/REG_FILE/RSR<31>237)
+     LUT3:I2->O            4   0.551   0.943  GROUP_10_KGP_RISC/REG_FILE/RSR<31>247 (DINB<31>)
+     LUT4:I3->O           42   0.551   1.910  GROUP_10_KGP_RISC/A_MUX/OUT<31>1 (DBG_31_OBUF)
+     OBUF:I->O                 5.644          DBG_31_OBUF (DBG<31>)
+    ----------------------------------------
+    Total                     15.727ns (9.119ns logic, 6.608ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Delay:               14.159ns (Levels of Logic = 4)
+  Source:            HLT (PAD)
+  Destination:       DBG<31> (PAD)
+
+  Data Path: HLT to DBG<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   0.821   2.174  HLT_IBUF (HLT_IBUF)
+     LUT4:I1->O           87   0.551   2.507  GROUP_10_KGP_RISC/CLU/SSWREG2 (GROUP_10_KGP_RISC/SA)
+     LUT4:I0->O           42   0.551   1.910  GROUP_10_KGP_RISC/A_MUX/OUT<31>1 (DBG_31_OBUF)
+     OBUF:I->O                 5.644          DBG_31_OBUF (DBG<31>)
+    ----------------------------------------
+    Total                     14.159ns (7.567ns logic, 6.592ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.53 secs
+ 
+--> 
+
+Total memory usage is 4612576 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

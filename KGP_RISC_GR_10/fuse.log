@@ -1,0 +1,77 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/test_computer_isim_beh.exe -prj C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/test_computer_beh.prj work.test_computer work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/LOOKAHEAD_CARRY_UNIT.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/AUGMENTED_FOUR_BIT_CARRY_LOOK_AHEAD_ADDER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADDER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/THIRTY_TWO_BIT_TWO_TO_ONE_MUX.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/THIRTY_TWO_BIT_DECODER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/THIRTY_TWO_BIT_COMPLEMENT.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/THIRTY_TWO_BIT_ADDER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/SHIFT_RIGHT_LOGICAL.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/SHIFT_RIGHT_ARITHMETIC.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/SHIFT_LEFT_LOGICAL.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/MUX81.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/D_LATCH.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/BITWISE_XOR.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/BITWISE_AND.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/THIRTY_TWO_BIT_OR.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/THIRTY_TWO_BIT_FOUR_TO_ONE_MUX.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/REGISTER_FILE.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/PROGRAM_COUNTER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/ONE_BIT_EIGHT_TO_ONE_MUX.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/ipcore_dir/MEMORY.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/CONTROLLER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/ALU_STRUCTURAL.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/ADDER_L.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/ADDER_1.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RAM.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/PROCESSOR.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/MUX211.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/RISC_COMPUTER.v" into library work
+Analyzing Verilog file "C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/test_computer.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module MUX232
+Compiling module MUX212
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module MEMORY
+Compiling module MEM
+Compiling module CONTROLLER
+Compiling module MUX832
+Compiling module REGISTER_FILE
+Compiling module MUX432
+Compiling module THIRTY_TWO_FAN_IN_OR
+Compiling module MUX81
+Compiling module AUGMENTED_FOUR_BIT_CARRY_LOOK_AH...
+Compiling module LOOKAHEAD_CARRY_UNIT
+Compiling module SIXTEEN_BIT_CARRY_LOOK_AHEAD_ADD...
+Compiling module THIRTY_TWO_BIT_ADDER
+Compiling module THIRTY_TWO_BIT_COMPLEMENT
+Compiling module BITWISE_AND
+Compiling module BITWISE_XOR
+Compiling module THIRTY_TWO_BIT_DECODER
+Compiling module SHIFT_LEFT_LOGICAL
+Compiling module SHIFT_RIGHT_LOGICAL
+Compiling module SHIFT_RIGHT_ARITHMETIC
+Compiling module D_LATCH
+Compiling module ALU_STRUCTURAL
+Compiling module PROGRAM_COUNTER
+Compiling module ADDER_1
+Compiling module ADDER_L
+Compiling module PROCESSOR
+Compiling module RISC_COMPUTER
+Compiling module test_computer
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 27 sub-compilation(s) to finish...
+Compiled 34 Verilog Units
+Built simulation executable C:/Users/Student/Desktop/upsc_with_assembler/upsc/KGP_RISC_GR_10/test_computer_isim_beh.exe
+Fuse Memory Usage: 33452 KB
+Fuse CPU Usage: 686 ms

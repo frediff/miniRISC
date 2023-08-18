@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/upsc/KGP_RISC_GR_10/ALU_STRUCTURAL.xst" -ofn "D:/upsc/KGP_RISC_GR_10/ALU_STRUCTURAL.syr" 

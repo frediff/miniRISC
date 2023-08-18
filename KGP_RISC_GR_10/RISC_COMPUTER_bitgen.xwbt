@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Student\Desktop\upsc_with_assembler\upsc\KGP_RISC_GR_10\RISC_COMPUTER.ncd
+OUTFILE=C:\Users\Student\Desktop\upsc_with_assembler\upsc\KGP_RISC_GR_10\RISC_COMPUTER.bit
+FAMILY=Spartan3
+PART=xc3s400-4pq208
+WORKINGDIR=C:\Users\Student\Desktop\upsc_with_assembler\upsc\KGP_RISC_GR_10
+LICENSE=WebPack
+USER_INFO=__0_0_0
