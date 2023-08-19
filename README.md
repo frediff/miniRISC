@@ -10,11 +10,11 @@ Our processor miniRISC has the following Instruction Set Architecture (ISA). The
 
 #### The Instruction Set Architecture
 
-![](ISA.png)
+![](ISA.svg)
 
 #### Design
 
-![](Design.png)
+![](Design.svg)
 
 #### Contributors
 
