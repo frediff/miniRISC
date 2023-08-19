@@ -2,7 +2,7 @@
 
 # miniRISC Processor Design - Project Description
 
-### The repository for the project is available at https://github.com/frediff/miniRISC
+### The project repository is available at https://github.com/frediff/miniRISC
 
 ## miniRISC 
 
